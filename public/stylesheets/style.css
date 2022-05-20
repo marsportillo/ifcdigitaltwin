@@ -1,8 +1,17 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+#map {
+  height: 100vh; /* Would mean 50% of Viewport height */
+  width: 100wh; /* Would mean 75% of Viewport width*/
+}
+
+.map {
+  padding-left: 0px;
+  padding-right: 0px;
 }
