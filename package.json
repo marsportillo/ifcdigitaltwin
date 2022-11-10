@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "build": "rollup -c ./rollup.config.js",
+    "watch": "rollup -w -c ./rollup.config.js"
+
   },
   "dependencies": {
     "bootstrap": "5.2.0-beta1",
@@ -12,6 +15,12 @@
     "express": "~4.16.1",
     "hbs": "4.2.0",
     "http-errors": "~1.6.3",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "web-ifc": "^0.0.36"
+  },
+  "devDependencies": {
+    "@open-wc/building-rollup": "^2.0.2",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "rollup": "^3.2.5"
   }
 }
