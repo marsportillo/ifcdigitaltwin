@@ -4,9 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "build": "rollup -c ./rollup.config.js",
-    "watch": "rollup -w -c ./rollup.config.js"
-
+    "build": "rollup -c ./public/javascripts/rollup.config.js",
+    "watch": "rollup -w -c ./public/javascripts/rollup.config.js"
   },
   "dependencies": {
     "bootstrap": "5.2.0-beta1",
@@ -16,11 +15,13 @@
     "hbs": "4.2.0",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
+    "typeface-droid-sans": "^1.1.13",
     "web-ifc": "^0.0.36"
   },
   "devDependencies": {
-    "@open-wc/building-rollup": "^2.0.2",
+    "@open-wc/building-rollup": "^2.2.1",
+    "@rollup/plugin-json": "^5.0.1",
     "@rollup/plugin-node-resolve": "^15.0.1",
-    "rollup": "^3.2.5"
+    "rollup": "^2.79.1"
   }
 }
